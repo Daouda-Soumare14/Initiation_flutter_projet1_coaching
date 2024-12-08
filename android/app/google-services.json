@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1023361304131",
+    "project_id": "socialapptutoriel",
+    "storage_bucket": "socialapptutoriel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023361304131:android:3b408b1b22a34216e676f6",
+        "android_client_info": {
+          "package_name": "app.mitchkoko.sosialtutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWNphsJwRtF27cwr7PNoRv2XZIrbwAAvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
