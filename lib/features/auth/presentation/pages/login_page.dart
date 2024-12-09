@@ -4,6 +4,7 @@ import 'package:projet1/features/auth/presentation/components/my_text_field.dart
 
 class LoginPage extends StatefulWidget {
   final void Function()? onTap;
+
   const LoginPage({super.key, required this.onTap});
 
   @override
@@ -17,6 +18,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // resizeToAvoidBottomInset: false,
         body: SafeArea(
       child: Center(
         child: Padding(
@@ -72,7 +74,8 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                       "Register now ",
                       style: TextStyle(
-                          color: Theme.of(context).colorScheme.inversePrimary,
+                          color: Colors.black,
+                          // Theme.of(context).colorScheme.inversePrimary,
                           fontWeight: FontWeight.bold),
                     ),
                   ),

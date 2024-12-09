@@ -2,10 +2,26 @@ import 'package:flutter/material.dart';
 import '../components/my_button.dart';
 import '../components/my_text_field.dart';
 
-
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key}); // Le constructeur accepte une clé pour identifier le widget.
+  /// De [Daouda_Soumare]
+  ///
+  /// A chaque fois vous appelez ma ( cette )
+  /// [Methode] / [Class] / [Widget] suiante :
+  /// vous devez lui passer en parametttre la fonction [onTap]
+  ///
+  /// Exemple :
+  ///
+  ///
+  /// RegisterPage(
+  ///        onTap: togglePages,
+  /// );
+  ///
+  /// Let's go 🫡
+  ///
+  ///
 
+  final void Function()? onTap;
+  const RegisterPage({super.key, required this.onTap});
   @override
   State<RegisterPage> createState() => _RegisterPageState(); // Associe l'état `_RegisterPageState` à cette page.
 }
@@ -95,9 +111,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   height: 50,
                 ),
                 // Texte indiquant une alternative pour les utilisateurs déjà inscrits.
-                Text(
-                  "Already a member? Login now",
-                  style: TextStyle(color: Theme.of(context).colorScheme.primary),
+                GestureDetector(
+                   onTap: widget.onTap,
+                  child: Text(
+                    "Already a member? Login now",
+                    style: TextStyle(color: Theme.of(context).colorScheme.primary),
+                  ),
                 ),
               ],
             ),

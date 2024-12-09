@@ -29,7 +29,9 @@ class _AuthPageState extends State<AuthPage> {
         onTap: togglePages,
       );
     } else {
-      return const RegisterPage();
+      return RegisterPage(
+        onTap: togglePages,
+      );
     }
   }
 }
